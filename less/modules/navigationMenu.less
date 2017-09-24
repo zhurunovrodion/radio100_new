@@ -1,0 +1,405 @@
+.navigationMenu{
+	height: 105px;
+	width: 100%;
+	background-color: rgba(0,0,0,.35);
+	position: absolute;
+	top:0;
+	left:0;
+	display: flex;
+	justify-content:flex-end;
+
+	
+	&__menu{
+		display: flex;
+		align-items: center;
+		margin-left: 48px;
+		flex-basis: 615px;
+	}
+
+	&__socialNetworksIcons{
+		margin-right: 7px;
+		min-width: 90px;
+		display: flex;
+		align-items: center;
+	}
+}
+
+.centralPanel{
+	display: flex;
+		margin-left: 47px;
+		flex-basis: 666px;
+		height: 105px;
+		background-color: rgba(0,0,0,.5);
+		align-items: center;
+ 	position: relative;
+	&__radioLogo{
+		min-width: 128px;
+		margin-left: 41px;
+		height: 82px;
+	}
+
+	&__streamPlayer{
+	display: flex;
+	flex-wrap:wrap;
+	margin-left: 44px;
+	width: 100%;
+	align-items:center;
+	}
+
+
+
+
+}
+
+
+.fmFrequency{
+		
+}
+
+.playButton{
+		color: white;
+		font-size: 38px;
+		transition: all 0.5s;
+		cursor: pointer;
+		user-select: none;
+		margin-bottom: 12px;
+		margin-left: 15px;
+		&:hover{
+			color:@red-dark;
+		}
+}
+
+
+.onAir{
+		display: flex;
+		
+}
+
+
+.onAir{
+	&__title{
+		    margin-left: 10px;
+		    min-width: 95px;
+		    p{
+		    	display: inline;
+		    }
+	}
+
+	&__songName{
+		    margin-left: 5px;
+		    max-width: 135px;
+		    p{
+		    	display: inline;
+		    }
+	}
+}
+
+
+
+
+.menuHamburgerButton {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  font-size: 0;
+  text-indent: -9999px;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+  z-index: 2;
+}
+ 
+.menuHamburgerButton:focus {
+  outline: none;
+}
+
+
+.menuHamburgerButton span {
+  display: block;
+  position: absolute;
+  top: 18px;
+  left: 7px;
+  right: 0px;
+  height: 3px;
+  background: white;
+  width: 25px
+}
+ 
+.menuHamburgerButton span::before,
+.menuHamburgerButton span::after {
+  position: absolute;
+  display: block;
+  left: 0px;
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  content: "";
+}
+ 
+.menuHamburgerButton span::before {
+  top: -8px;
+}
+ 
+.menuHamburgerButton span::after {
+  bottom: -8px;
+}
+
+
+.menuHamburgerButton {
+  background-color: @bg-red-opacity;
+}
+ 
+.menuHamburgerButton span {
+  transition: background 0s 0.3s;
+}
+ 
+.menuHamburgerButton span::before,
+.menuHamburgerButton span::after {
+  transition-duration: 0.3s, 0.3s;
+  transition-delay: 0.3s, 0s;
+}
+ 
+.menuHamburgerButton span::before {
+  transition-property: top, transform;
+}
+ 
+.menuHamburgerButton span::after {
+  transition-property: bottom, transform;
+}
+
+
+.menuHamburgerButton.js-menuHamburgerButton-active {
+  background-color: white;
+}
+ 
+.menuHamburgerButton.js-menuHamburgerButton-active span {
+  background: none;
+}
+ 
+.menuHamburgerButton.js-menuHamburgerButton-active span::before {
+  top: 0;
+  background-color: @red-dark;
+  transform: rotate(45deg);
+}
+ 
+.menuHamburgerButton.js-menuHamburgerButton-active span::after {
+  bottom: 0;
+   background-color: @red-dark;
+  transform: rotate(-45deg);
+}
+ 
+.menuHamburgerButton.js-menuHamburgerButton-active span::before,
+.menuHamburgerButton.js-menuHamburgerButton-active span::after {
+  transition-delay: 0s, 0.3s;
+}
+
+
+.menu{
+	display: flex;
+	margin-left: 19px;
+	&__list{
+		display: flex;
+		flex-direction:row;
+		li{
+		   	&:not(:first-child)::before {
+				content: '|';
+				margin-left: 19px;
+				margin-right: 19px;
+			}
+
+		    a{
+		      transition: 0.4s;
+
+		      &:hover{
+		      	color:@red-normal;
+		      }
+		    }
+		  }
+	}
+	
+}
+
+
+
+.socialNetworksIconsList{
+	display: flex;
+	align-items:  center;
+
+}
+
+
+.googlePlayIcon{
+	width: 19px;
+    height: 17px;
+    background-image: url(../images/googlePlayIcon-red.png);
+    margin-left: 15px;
+    background-repeat: no-repeat;
+    position: relative;
+   
+
+    
+}
+
+
+
+
+
+
+
+
+
+.googlePlayIcon-fade{
+	width: 19px;
+    height: 17px;
+    background-image: url(../images/googlePlayIcon-white.png);
+    margin-left: 15px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top:44px;
+    transition: all 0.7s;
+    &:hover{
+    	opacity: 0;
+    }
+
+    &.m--googlePlayIcon-black{
+    	background-image: url(../images/googlePlayIcon-black.png);
+    }
+}
+
+.vkIcon{
+	width: 33px;
+    height: 19px;
+    background-image: url(../images/vkIcon-red.png);
+    margin-left: 15px;
+    background-repeat: no-repeat;
+    position: relative;
+   
+}
+
+.vkIcon-fade{
+	width: 33px;
+    height: 19px;
+    background-image: url(../images/vkIcon-white.png);
+    margin-left: 15px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top:43px;
+    transition: all 0.7s;
+    &:hover{
+    	opacity: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1436px){
+
+
+
+.centralPanel{
+	display: flex;
+		margin-left: 47px;
+		max-width: 430px;
+		height: 105px;
+		background-color: rgba(0,0,0,.5);
+		align-items: center;
+ 	position: relative;
+	&__radioLogo{
+		min-width: 128px;
+		margin-left: 41px;
+		height: 82px;
+	}
+
+	&__streamPlayer{
+	display: flex;
+	flex-wrap:wrap;
+	margin-left: 44px;
+	width: 100%;
+	align-items:center;
+	}
+
+
+
+
+}
+
+
+
+
+}
+
+
+
+@media (max-width: 1000px){
+
+.navigationMenu{
+	height: 105px;
+	width: 100%;
+	background-color: rgba(0,0,0,.35);
+	position: absolute;
+	top:0;
+	left:0;
+	display: flex;
+	justify-content:space-between;
+	flex-wrap:wrap;
+	
+	&__menu{
+		display: flex;
+		align-items: center;
+		margin-left: 15px;
+		flex-basis: 0px;
+	}
+
+	&__socialNetworksIcons{
+		margin-right: 7px;
+		min-width: 90px;
+		display: flex;
+		align-items: center;
+	}
+}
+
+.centralPanel{
+	display: none;
+		margin-left: 47px;
+		max-width: 430px;
+		height: 105px;
+		background-color: rgba(0,0,0,.5);
+		align-items: center;
+ 	position: relative;
+	&__radioLogo{
+		min-width: 128px;
+		margin-left: 41px;
+		height: 82px;
+	}
+
+	&__streamPlayer{
+	display: flex;
+	flex-wrap:wrap;
+	margin-left: 44px;
+	width: 100%;
+	align-items:center;
+	}
+
+
+
+
+}
+
+
+
+
+}

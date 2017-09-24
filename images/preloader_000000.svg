@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X7 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="35.3668mm" height="35.3668mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 732 732"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str0 {stroke:black;stroke-width:31.0512}
+    .fil0 {fill:none}
+    .fil1 {fill:black;fill-rule:nonzero}
+   ]]>
+  </style>
+ </defs>
+ <g id="layer1">
+  <metadata id="layer1"/>
+  <circle class="fil0 str0" cx="366" cy="366" r="57"/>
+  <circle class="fil0 str0" cx="366" cy="366" r="270"/>
+
+  <circle class="fil0 str0" cx="366" cy="366" r="351"/>
+  
+    
+
+  
+  <path class="fil1" d="M451 227c-3,0 -6,3 -6,7 0,4 3,7 6,7 4,0 7,-3 7,-7 0,-4 -3,-7 -7,-7zm-170 -13c13,0 22,11 20,23 21,4 43,-6 53,-25 -6,-3 -9,-9 -9,-16 0,-11 10,-20 21,-20 12,0 21,9 21,20 0,7 -3,13 -9,16 10,19 32,29 53,25 -2,-12 7,-23 20,-23 12,0 21,9 21,20 0,12 -10,21 -23,20l-26 41c-36,-30 -78,-30 -114,0l-26 -41c-13,1 -23,-8 -23,-20 0,-11 9,-20 21,-20zm85 -24c-4,0 -7,3 -7,6 0,4 3,7 7,7 4,0 7,-3 7,-7 0,-3 -3,-6 -7,-6zm-85 37c-4,0 -7,3 -7,7 0,4 3,7 7,7 4,0 7,-3 7,-7 0,-4 -3,-7 -7,-7z"/>
+ </g>
+ <g id="layer2">
+  <metadata id="layer2"/>
+  
+  <circle id="outer_circle" cx="366" cy="366" r="351" stroke="#ff0000" stroke-width="31"  transform="rotate(45 62 62)"  stroke-dasharray ="1102 " stroke-dashoffset="1102" fill="none" />
+  
+   <animateTransform attributeType="xml"
+                    attributeName="transform"
+                    type="rotate"
+                    from="0 369 369"
+                    to="360 369 369"
+                    dur="4s"
+                    repeatCount="indefinite"/>
+
+  
+  
+ </g>
+ <g id="layer3">
+  <metadata id="layer3"/>
+  
+  
+  <circle id="innet_circle" cx="366" cy="366" r="270" stroke="#ff0000" stroke-width="31"   stroke-dasharray ="848 " stroke-dashoffset="848" fill="none" />
+    <animateTransform attributeType="xml"
+                    attributeName="transform"
+                    type="rotate"
+                    from="360 369 369"
+                    to="0 369 369"
+                    dur="4s"
+                    repeatCount="indefinite"/>
+
+  
+  
+ </g>
+</svg>
